@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @lucaseeyou2
-- 👀 I’m interested `in idiotic smart things`
-- 🌱 I’m currently learning `Japascript, HTML, CSS`
-- 💞️ I’m looking to collaborate on `discord (Bread#1963)`
-- 📫 How to reach me `no way dude lol`
+- 👀 I’m interested `in building web applications or games`
+- 🌱 I’m currently learning `Javascript`
+- 💞️ I’m looking to collaborate on `discord (<@700001212883402823>)`
+- 📫 How to reach me `By discord`
 
 <!---
 lucaseeyou2/lucaseeyou2 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
