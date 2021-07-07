@@ -1,10 +1,11 @@
-- 👋 Hi, I’m @lucaseeyou2
-- 👀 I’m interested `in building web applications or games`
-- 🌱 I’m currently learning `Javascript`
-- 💞️ I’m looking to collaborate on `discord (<@700001212883402823>)`
-- 📫 How to reach me `By discord`
+# About me
 
-<!---
-lucaseeyou2/lucaseeyou2 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Hi ! I'm Lucaseeyou2, a front-end programmer working with web technologies such as HTML, CSS and Javascript. I work on really silly projects that can be found under my repostories. These range from styles, to machines and other inventions that I imagined. Personally, I do enjoy creating and designing these websites and applications. I also enjoy :
+
+* Listening to Music
+* Working with computers
+* Playing video games
+
+
+# My Github Stats
+[![lucaseeyou2](https://github-readme-stats.vercel.app/api?username=lucaseeyou2&theme=dracula&title_color=ffffff&hide_border=true&border_radius=20)](https://github.com/lucaseeyou2)
