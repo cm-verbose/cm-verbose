@@ -13,3 +13,6 @@ Hi ! I'm Lucaseeyou2, a front-end programmer working with web technologies such 
 # My most used Languages
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Lucaseeyou2&theme=dracula&hide_border=true&border_radius=20&title_color=ffffff)](https://github.com/anuraghazra/github-readme-stats)
+
+# Contacts 
+You can contact me via discord with my identifier (**700001212883402823**) or by messaging me at **cm verbose#1963**.
