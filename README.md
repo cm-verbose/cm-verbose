@@ -1,18 +1,13 @@
 # About me
+Hello, I am just a simple _**web develloper**_ building applications (and dumb projects), and also a scholar.<br>
+Here is a list of languages that I use : 
 
-Hi ! I'm Lucaseeyou2, a front-end programmer working with web technologies such as **HTML**, **CSS** and **Javascript**. I work on really silly projects that can be found under my repostories. These range from styles, to machines and other inventions that I imagined. Personally, I do enjoy creating and designing these websites and applications. I also enjoy :
+* HTML 
+* CSS
+  * (SCSS)
+* JavaScript
+  * (TypeScript)
+  * Frameworks :
+    * React.js
+    * Node.js
 
-* Listening to Music
-* Working with computers
-* Playing video games
-
-
-# My Github Stats
-[![lucaseeyou2](https://github-readme-stats.vercel.app/api?username=lucaseeyou2&theme=dracula&title_color=ffffff&hide_border=true&border_radius=20)](https://github.com/anuraghazra/github-readme-stats)
-
-# My most used Languages
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Lucaseeyou2&theme=dracula&hide_border=true&border_radius=20&title_color=ffffff)](https://github.com/anuraghazra/github-readme-stats)
-
-# Contacts 
-You can contact me via discord with my identifier (**700001212883402823**) or by messaging me at **cm verbose#1963**.
