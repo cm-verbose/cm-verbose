@@ -15,4 +15,3 @@ Here is a list of technologies that I use :
     * **Node.js**
 
 As a develloper, I am currently working on : **`Palabra`** (a rich text editor)
-
