@@ -2,4 +2,8 @@
 
 ![Metrics](https://github.com/cm-verbose/cm-verbose/blob/main/github-metrics.svg)
 
-Hello *!* If you see that there's nothing going on right now, it will probably have more things coming in the future (yes I deleted a bunch of repos)
+(Metrics Provided by lowlighter at [lowlighter/metrics](https://github.com/lowlighter/metrics))
+
+# Repositories 
+
+- [Notes](https://github.com/cm-verbose/Notes) : Notes for programming in general touching on many subjects, in diferent languages. Currently for : `JavaScript`, `Python` and `Haskell`. This repository is updated frequently. 
