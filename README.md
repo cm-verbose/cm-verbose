@@ -2,8 +2,8 @@
 
 ![Metrics](https://github.com/cm-verbose/cm-verbose/blob/main/github-metrics.svg)
 
-(Metrics Provided by lowlighter at [lowlighter/metrics](https://github.com/lowlighter/metrics))
+(Metrics provided by lowlighter at [lowlighter/metrics](https://github.com/lowlighter/metrics))
 
-# Repositories 
+# Repositories
 
 - **[Notes](https://github.com/cm-verbose/Notes)** : Notes for programming in general touching on many subjects, in diferent **languages**. Currently for : **`JavaScript`**, **`Python`** and **`Haskell`**. This repository is updated frequently. 
