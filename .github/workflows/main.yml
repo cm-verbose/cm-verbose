@@ -16,7 +16,6 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           user: cm-verbose
           template: classic
           base: community
