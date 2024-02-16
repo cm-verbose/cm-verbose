@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base target="_blank" />
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="cmvb's website" />
+  <link rel="manifest" href="./src/data/webmanifest.webmanifest" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="shortcut icon" href="./src/svg/Logo.svg" type="image/svg" />
+  <title>cmvb</title>
+</head>
+
+<body>
+  <main>
+    <section class="frame" id="frame-main">
+      <div id="centered-main-intro">
+        <div>Hi ! I'm <span id="name">cmvb</span></div>
+        <div id="self-description">A self-taught web developer</div>
+      </div>
+    </section>
+    <section class="frame">
+      <h2>About me</h2>
+      <p>
+        I'm a self-taught web developer developping apps. I also enjoy playing around with technologies. I
+        primarly use Javascript (Typescript) and know other languages such as Python, Java, and Rust.
+      </p>
+    </section>
+    <section class="frame">
+      <h2>Projects</h2>
+      <p>Below are some projects of mine :</p>
+      <div id="projects-container">
+        <div data-grid-item="1">
+          <div class="project">
+            <div><a href="https://cm-verbose.github.io/Azu/">Azu</a></div>
+            <img src="./src/img/Azu-screenshot.png" alt="Azu-preview" data-zoomable-image />
+            <div class="tag-list">
+              <div>2023</div>
+              <div>
+                <img src="./src/svg/Typescript.svg" alt="typescript-logo" width="36" height="36" />
+                <span>TypeScript</span>
+              </div>
+            </div>
+            <p>
+              Azu is a rich text editor, with the main goal of correcting mistakes (in French). No external APIs
+              used.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="preview-window"></div>
+  <div id="close-preview"></div>
+  <script type="module" src="./src/js/script.js"></script>
+</body>
+
+</html>
