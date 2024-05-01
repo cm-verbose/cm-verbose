@@ -2,7 +2,8 @@ name: Github Pages
 
 on:
   push:
-    branches: ["pages", "main"]
+    branches:
+      - pages
 
   workflow_dispatch:
 
