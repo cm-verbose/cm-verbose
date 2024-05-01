@@ -2,8 +2,7 @@ name: Github Pages
 
 on:
   push:
-    branches:
-      - pages
+    branches: ["main", "pages"]
 
   workflow_dispatch:
 
@@ -30,7 +29,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "/src/"
+          path: "./src/"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
