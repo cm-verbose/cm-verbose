@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <base target="_blank">
+  <meta charset="UTF-8">
+  <meta name="og:title" content="cmvb">
+  <meta name="og:type" content="website">
+  <meta name="og:url" content="https://cm-verbose.github.io/cm-verbose">
+  <meta name="og:image" content="https://cm-verbose.github.io/cm-verbose/pwa/screenshots/desktop.png">
+  <meta name="og:image:type" content="image/png">
+  <meta name="og:image:width" content="1515">
+  <meta name="og:image:height" content="787">
+  <meta name="og:image:alt" content="[cmvb's website]">
+  <meta name="description" content="cmvb's website">
+  <meta name="theme-color" content="#6E9877">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="./pwa/webmanifest.webmanifest">
+  <link rel="shortcut icon" href="./icons/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>cmvb</title>
+</head>
+
+<body>
+  <noscript>
+    <div id="noscript-dialog">
+      <h1>JavaScript is not enabled</h1>
+      <p>Please enable <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> to access the website</p>
+    </div>
+  </noscript>
+  <div id="main-view">
+    <section>
+      <div id="title-container">
+        <h1 id="profile-name">cmvb</h1>
+        <span id="sub-description">web developer</span>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>About</h2>
+      <p>Hi I'm cmvb ! I primarly use Typescript to make my apps. I also enjoy tinkering with other languages, like Rust
+        or Python. As you might have guessed, I love exploring new tech by myself.</p>
+    </section>
+    <hr>
+    <section>
+      <h2 id="projects">Projects</h2>
+      <div id="project-container">
+        <div class="project">
+          <h2>Todo list</h2>
+          <ul class="taglist">
+            <li>
+              <img src="./svg/js.svg" alt="Javascript icon" width="20" height="20">
+              <span>JavaScript</span>
+            </li>
+            <li class="github" data-github-repo="https://github.com/cm-verbose/TodoList">
+              <img src="./svg/github.svg" alt="Github icon" width="20" height="20" class="rounded">
+              <span>Source code</span>
+            </li>
+            <li class="try-tag" data-ressource-location="https://cm-verbose.github.io/TodoList/">
+              <span>Try it</span>
+            </li>
+          </ul>
+          <p>
+            <strong>Todo list</strong> is a todo list application to organise your tasks. Tasks are stored in your
+            browser.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>

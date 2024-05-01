@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest.json",
+  "name": "cmvb",
+  "icons": [
+    {
+      "src": "../icons/Logo.png",
+      "purpose": "maskable",
+      "sizes": "512x512"
+    },
+    {
+      "src": "../icons/logo.svg",
+      "sizes": "any"
+    }
+  ],
+  "background_color": "#ffffff",
+  "categories": ["developer", "social"],
+  "description": "cmvb's website",
+  "dir": "ltr",
+  "display": "standalone",
+  "orientation": "landscape",
+  "start_url": "../index.html",
+  "scope": "../",
+  "screenshots": [
+    {
+      "src": "./screenshots/desktop.png",
+      "sizes": "1515x787",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Title view of the page"
+    },
+
+    {
+      "src": "./screenshots/mobile.png",
+      "sizes": "571x463",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Title view of the page"
+    }
+  ],
+  "short_name": "cmv",
+  "theme_color": "#6E9877"
+}

@@ -1,44 +1,31 @@
 class Main {
   constructor() {
-    this.zoomableImages = document.querySelectorAll("[data-zoomable-image]");
-    this.previewWindow = document.querySelector("#preview-window"); 
-    this.closePreviewDiv = document.querySelector("#close-preview"); 
     this.ini();
   }
 
   ini() {
-    this.setImagePreviews();
+    this.setupGithubLinks();
   }
 
-  /** @description opens window with image in a new view */
-  setImagePreviews() {
-    for (const image of this.zoomableImages) {
-      image.addEventListener("click", () => {
-        this.displayPreviewWindow(); 
-        const src = image.src; 
-        const newImage = document.createElement("img"); 
-        newImage.src = src; 
-        newImage.width = 1000
-        this.previewWindow.appendChild(newImage); 
+  /** @description Sets up link for repositories and live previews*/
+  setupGithubLinks() {
+    const githubRepoLinks = document.querySelectorAll("[data-github-repo]");
+    for (const linkElement of githubRepoLinks) {
+      const linkhref = linkElement.getAttribute("data-github-repo");
+      if (!linkhref) continue;
+      linkElement.addEventListener("click", () => {
+        window.open(linkhref);
       });
     }
-    this.closePreviewDiv.addEventListener("click", () => {
-      this.closePreviewWindow(); 
-      this.previewWindow.innerHTML = ""; 
-    });
-  }
 
-  /** @description makes the image preview window visible */
-  displayPreviewWindow(){
-    this.previewWindow.style.display = "block";
-    this.closePreviewDiv.style.display = "block";
-    document.body.style.overflow = "hidden";
-  }
-
-  closePreviewWindow(){
-    this.previewWindow.style.display = "none";
-    this.closePreviewDiv.style.display = "none";
-    document.body.style.overflow = "auto";
+    const demoLinks = document.querySelectorAll("[data-ressource-location]");
+    for (const linkElement of demoLinks) {
+      const linkhref = linkElement.getAttribute("data-ressource-location");
+      if (!linkhref) continue;
+      linkElement.addEventListener("click", () => {
+        window.open(linkhref);
+      });
+    }
   }
 }
 
