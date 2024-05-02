@@ -4,7 +4,17 @@ class Main {
   }
 
   ini() {
+    this.setupServiceWorker();
     this.setupGithubLinks();
+  }
+
+  /** @description Instantiates a service worker */
+  setupServiceWorker() {
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js");
+      });
+    }
   }
 
   /** @description Sets up link for repositories and live previews*/

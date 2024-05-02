@@ -32,6 +32,14 @@ body {
   background-color: var(--background-color);
 }
 
+body::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+}
+
 noscript {
   position: fixed;
   width: 100%;
@@ -70,8 +78,14 @@ noscript {
   transition-duration: var(--animation-duration);
 }
 
-#noscript-dialog *:is(a):hover{
+#noscript-dialog *:is(a):hover {
   text-decoration-color: var(--green);
+}
+
+@media (scripting: none) or (scripting: initial-only) {
+  #main-view {
+    display: none !important;
+  }
 }
 
 #main-view {
@@ -122,7 +136,7 @@ noscript {
 #sub-description {
   color: var(--text-color-secondary);
   margin: 0;
-  font-size: 1em;
+  font-size: 1.5em;
   padding-left: 1em;
 }
 
@@ -169,7 +183,7 @@ p {
 
 .project > h2 {
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.75em;
   margin: 0px;
   padding: 20px 0;
 }
@@ -304,6 +318,10 @@ p {
     width: 90%;
   }
 
+  #projects {
+    margin: auto;
+  }
+
   #project-container {
     grid-template-columns: 1fr;
     font-size: 1.25em;
@@ -317,6 +335,10 @@ p {
 
   #main-view {
     width: 90%;
+  }
+
+  #projects {
+    margin: auto;
   }
 
   #project-container {
@@ -334,6 +356,10 @@ p {
     width: 90%;
   }
 
+  #projects {
+    margin: auto;
+  }
+
   #project-container {
     grid-template-columns: 1fr;
     font-size: 1.25em;
@@ -349,6 +375,10 @@ p {
     width: 90%;
   }
 
+  #projects {
+    margin: auto;
+  }
+
   #project-container {
     grid-template-columns: 1fr;
     font-size: 1.25em;
@@ -362,6 +392,10 @@ p {
 
   #main-view {
     width: 90%;
+  }
+
+  #projects {
+    margin: auto;
   }
 
   #project-container {
