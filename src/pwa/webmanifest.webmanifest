@@ -17,7 +17,7 @@
   "description": "cmvb's website",
   "dir": "ltr",
   "display": "standalone",
-  "orientation": "landscape",
+  "orientation": "natural",
   "start_url": "../index.html",
   "scope": "../",
   "screenshots": [
