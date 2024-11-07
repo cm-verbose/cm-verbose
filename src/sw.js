@@ -4,14 +4,13 @@ class ServiceWorker {
 
   assetsPath = [
     "./js/script.js",
-    "./index.html",
+    "./js/module/UserInterface.js",
+    "./font/Work_Sans/Work_Sans_Variable", 
+    "./font/Work_Sans/Work_Sans_Italic.ttf", 
     "./css/style.css",
-    "./fonts/Manrope.ttf",
-    "./fonts/Sono.ttf",
-    "./icons/logo.svg",
-    "./icons/Logo.png",
-    "./svg/github.svg",
     "./svg/js.svg",
+    "./svg/github.svg",
+    "./index.html"
   ];
 
   constructor() {
@@ -40,7 +39,7 @@ class ServiceWorker {
   /** @description handles http fetches of the ressources */
   handleFetch() {
     self.addEventListener("fetch", (e) => {
-      if(e.request.url.startsWith('chrome-extension://')) return; 
+      if (e.request.url.startsWith("chrome-extension://")) return;
 
       e.respondWith(
         (async () => {

@@ -1,74 +1,70 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    <base target="_blank" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="cmvb's website" />
+    <meta name="theme-color" content="#6E9877" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" content="cmvb" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://cm-verbose.github.io/cm-verbose" />
+    <meta name="og:image" content="https://cm-verbose.github.io/cm-verbose/pwa/screenshots/desktop_screenshot.png" />
+    <meta name="og:image:type" content="image/png" />
+    <meta name="og:image:width" content="2560" />
+    <meta name="og:image:height" content="1440" />
+    <meta name="og:image:alt" content="[cmvb's website]" />
+    <link rel="manifest" href="./pwa/webmanifest.webmanifest" />
+    <link rel="shortcut icon" href="./icons/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>cmvb</title>
+  </head>
 
-<head>
-  <base target="_blank">
-  <meta charset="UTF-8">
-  <meta name="og:title" content="cmvb">
-  <meta name="og:type" content="website">
-  <meta name="og:url" content="https://cm-verbose.github.io/cm-verbose">
-  <meta name="og:image" content="https://cm-verbose.github.io/cm-verbose/pwa/screenshots/desktop.png">
-  <meta name="og:image:type" content="image/png">
-  <meta name="og:image:width" content="1515">
-  <meta name="og:image:height" content="787">
-  <meta name="og:image:alt" content="[cmvb's website]">
-  <meta name="description" content="cmvb's website">
-  <meta name="theme-color" content="#6E9877">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="./pwa/webmanifest.webmanifest">
-  <link rel="shortcut icon" href="./icons/logo.svg" type="image/x-icon">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>cmvb</title>
-</head>
-
-<body>
-  <noscript>
-    <div id="noscript-dialog">
-      <h1>JavaScript is not enabled</h1>
-      <p>Please enable <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> to access the website</p>
-    </div>
-  </noscript>
-  <div id="main-view">
-    <section>
-      <div id="title-container">
-        <h1 id="profile-name">cmvb</h1>
-        <span id="sub-description">web developer</span>
-      </div>
-    </section>
-    <hr>
-    <section>
-      <h2>About</h2>
-      <p>Hi I'm cmvb ! I primarly use Typescript to make my apps. I also enjoy tinkering with other languages, like Rust
-        or Python. As you might have guessed, I love exploring new tech by myself.</p>
-    </section>
-    <hr>
-    <section>
-      <h2 id="projects">Projects</h2>
-      <div id="project-container">
-        <div class="project">
-          <h2>Todo list</h2>
-          <ul class="taglist">
-            <li>
-              <img src="./svg/js.svg" alt="Javascript icon" width="20" height="20">
-              <span>JavaScript</span>
-            </li>
-            <li class="github" data-github-repo="https://github.com/cm-verbose/TodoList">
-              <img src="./svg/github.svg" alt="Github icon" width="20" height="20" class="rounded">
-              <span>Source code</span>
-            </li>
-            <li class="try-tag" data-ressource-location="https://cm-verbose.github.io/TodoList/">
-              <span>Try it</span>
-            </li>
-          </ul>
-          <p>
-            <strong>Todo list</strong> is a todo list application to organise your tasks. Tasks are stored in your
-            browser.
-          </p>
+  <body>
+    <div id="main">
+      <section id="landing">
+        <h1 id="title">cmvb</h1>
+      </section>
+      <section id="about">
+        <h2 id="about-heading">About me</h2>
+        <p id="about-description">
+          I'm cmvb, a developer programming mostly apps and websites that don't really work that well. I am
+          currently working with Typescript while learning Rust, Java and Python.
+        </p>
+      </section>
+      <section id="projects-section">
+        <h2 id="projects-heading">Projects</h2>
+        <div id="project-count">-1</div>
+      </section>
+      <section id="projects-list">
+        <div id="projects">
+          <div class="project">
+            <hgroup>
+              <h2>Todo list</h2>
+            </hgroup>
+            <div class="project-content">
+              <div class="tag-list">
+                <div>
+                  <img src="./svg/js.svg" alt="Javascript" width="18" height="18" />
+                  <span>JavaScript</span>
+                </div>
+                <div data-source-code-url="https://github.com/cm-verbose/TodoList">
+                  <img src="./svg/github.svg" alt="Github" width="18" height="18" />
+                  <span>Source code</span>
+                </div>
+                <div class="try-it" data-live-demo-url="https://cm-verbose.github.io/TodoList/">
+                  <span>Try it</span>
+                </div>
+              </div>
+              <p>
+                A web app used to track, create, and delete a list of tasks. Tasks are stored in the browser, and
+                the app can be downloaded as a progressive web app (<span class="small-caps">PWA</span>).
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-  </div>
-  <script type="module" src="./js/script.js"></script>
-</body>
-
+      </section>
+    </div>
+    <script type="module" src="./js/script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,21 @@
+{
+  "name": "cm-verbose",
+  "version": "1.0.0",
+  "description": "A portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "lint-styles": "npx stylelint \"**/*.css\" --fix",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "eslint": "^9.14.0",
+    "globals": "^15.12.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1",
+    "typescript-eslint": "^8.13.0"
+  }
+}
