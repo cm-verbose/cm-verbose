@@ -14,7 +14,7 @@ export default class UserInterface {
   /* Making it slightly easier to define our targets and nodes */
   private targetSources: TargetsArray = [
     { nodes: this.sourceLiveDemos, target: "data-live-demo-url" },
-    { nodes: this.sourceRepoLinks, target: "data-source-code-url" },
+    { nodes: this.sourceRepoLinks, target: "data-source-code-url" }
   ];
   private targetSourceCorrespondance: CorrespondanceMap = new Map(
     this.targetSources.map((obj) => [obj.nodes, obj.target])

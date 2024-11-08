@@ -196,25 +196,25 @@ Projects
   font-variant: small-caps;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (width <= 1400px) {
   body {
     font-size: 18px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (width <= 1200px) {
   body {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (width <= 960px) {
   body {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (width <= 800px) {
   body {
     font-size: 12px;
   }
@@ -232,10 +232,11 @@ Projects
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (width <= 640px) {
   body {
     font-size: 12px;
   }
+
   #title {
     font-size: 10em;
   }
