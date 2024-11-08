@@ -1,2 +1,9 @@
-tabWidth = 2
+arrowParens = "always"
 bracketSameLine = true
+endOfLine = "lf"
+embeddedLanguageFormatting = "off"
+printWidth = 120
+semi = true
+singleQuote = false
+tabWidth = 2
+trailingComma = "none"

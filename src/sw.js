@@ -5,8 +5,8 @@ class ServiceWorker {
   assetsPath = [
     "./js/script.js",
     "./js/module/UserInterface.js",
-    "./font/Work_Sans/Work_Sans_Variable", 
-    "./font/Work_Sans/Work_Sans_Italic.ttf", 
+    "./font/Work_Sans/Work_Sans_Variable",
+    "./font/Work_Sans/Work_Sans_Italic.ttf",
     "./css/style.css",
     "./svg/js.svg",
     "./svg/github.svg",
@@ -25,11 +25,11 @@ class ServiceWorker {
   /** @description handles service worker registration */
   handleInstall() {
     self.addEventListener("install", (e) => {
-      this.info(`Installed`);
+      this.log(`Installed`);
       e.waitUntil(
         (async () => {
           const cache = await caches.open(this.cacheName);
-          this.info(`Caching ressources...`);
+          this.log(`Caching ressources...`);
           cache.addAll(this.assetsPath);
         })()
       );
@@ -44,13 +44,13 @@ class ServiceWorker {
       e.respondWith(
         (async () => {
           const req = await caches.match(e.request);
-          this.info(`Fetching ${e.request}`);
+          this.log(`Fetching ${e.request}`);
           if (req) {
             return req;
           }
           const response = await fetch(e.request);
           const cache = await caches.open(this.cacheName);
-          this.info(`Caching new ressources : ${e.request.url}`);
+          this.log(`Caching new ressources : ${e.request.url}`);
           cache.put(e.request, response.clone());
           return response;
         })()
@@ -58,7 +58,7 @@ class ServiceWorker {
     });
   }
 
-  info(content) {
+  log(content) {
     console.log(`${this.pfx} ${content}`);
   }
 }

@@ -1,6 +1,8 @@
 import UserInterface from "./module/UserInterface.js";
 
 class Main {
+  private SERVICE_WORKER_PATH = "./sw.js" as const;
+
   constructor() {
     this.ini();
     this.setupServiceWorker();
@@ -14,7 +16,7 @@ class Main {
   private setupServiceWorker() {
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
-        navigator.serviceWorker.register("./sw.js");
+        navigator.serviceWorker.register(this.SERVICE_WORKER_PATH);
       });
     }
   }

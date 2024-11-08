@@ -4,7 +4,7 @@
   "description": "A portfolio website",
   "main": "index.js",
   "scripts": {
-    "lint-styles": "npx stylelint \"**/*.css\" --fix",
+    "lint": "npx stylelint \"**/*.css\" --fix && prettier . --write && npx eslint --stats",
     "watch": "tsc --watch"
   },
   "keywords": [],

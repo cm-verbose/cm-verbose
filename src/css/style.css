@@ -147,6 +147,8 @@ Projects
 }
 
 .tag-list > div > img {
+  height: 1em;
+  width: 1em;
   border-radius: 50%;
 }
 
@@ -155,9 +157,11 @@ Projects
   border: 1px solid black;
   padding: 0.25em 0.5em;
   gap: 1ch;
-  font-size: 16px;
+  font-size: 0.8em;
   border-radius: 1em;
   user-select: none;
+  align-items: center;
+  white-space: nowrap;
 }
 
 [data-source-code-url],
@@ -190,4 +194,61 @@ Projects
 .small-caps {
   text-transform: lowercase;
   font-variant: small-caps;
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+
+  #about-description {
+    width: 75%;
+  }
+
+  #about-heading {
+    font-size: 6em;
+  }
+
+  #projects-heading {
+    font-size: 7em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 12px;
+  }
+  #title {
+    font-size: 10em;
+  }
+
+  #about-heading {
+    font-size: 6em;
+  }
+
+  #projects-heading {
+    font-size: 5em;
+  }
+
+  #about-description {
+    width: 100%;
+  }
 }
