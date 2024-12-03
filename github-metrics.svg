@@ -65,7 +65,7 @@
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="209.48457686319065" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="209.48457686319065" y="0" width="56.85199680175062" height="8" fill="#563d7c"/>
+                    <rect mask="url(#languages-bar)" x="209.48457686319065" y="0" width="56.85199680175062" height="8" fill="#663399"/>
                     <rect mask="url(#languages-bar)" x="266.3365736649413" y="0" width="52.297100534444304" height="8" fill="#3572A5"/>
                     <rect mask="url(#languages-bar)" x="318.63367419938555" y="0" width="38.64402642763961" height="8" fill="#dea584"/>
                     <rect mask="url(#languages-bar)" x="357.2777006270252" y="0" width="35.54677439717207" height="8" fill="#f1e05a"/>
@@ -82,7 +82,7 @@
                     </div>
                     <div class="field center no-wrap language">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                            <path fill="#563d7c" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                            <path fill="#663399" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                         </svg>
                         CSS
                     </div>
