@@ -2,7 +2,7 @@ import { ProjectData, ProjectInfo, ProjectLinkType, ProjectTag } from "../types"
 
 /** Interractions with the user interface */
 export default class UserInterface {
-  private static PROJECT_URL = "/data/projects.json" as const;
+  private static PROJECT_URL = "/cm-verbose/data/projects.json" as const;
   private projectList = document.querySelector("#project-list") as HTMLDivElement;
   private projectCounter = document.querySelector("#result-count") as HTMLDivElement;
   private searchInput = document.querySelector("#search-input") as HTMLInputElement;
