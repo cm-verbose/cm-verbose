@@ -1,32 +1,30 @@
-name: Github Pages
+name: Deploy to GitHub Pages
+
 on:
   push:
-    branches: ["pages"]
-  workflow_dispatch:
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+    branches:
+      - pages
+
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
     steps:
-      - name: Checkout
+      - name: Checkout source code
         uses: actions/checkout@v4
-        
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload `src/` folder to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
-          path: ./src
+          path: src/
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        with:
-          build_dir: ./src
