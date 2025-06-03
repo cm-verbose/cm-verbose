@@ -1,255 +1,156 @@
 @font-face {
-  font-family: work-sans;
+  font-family: geist;
   font-display: swap;
-  src: url("../font/Work_Sans/Work_Sans_Variable.ttf");
+  src: url(../font/Geist-VariableFont_wght.ttf);
 }
 
-:root {
-  --background-color-primary: #fff;
-  --amber: #ffc042;
-  --crimson-red: #e5383b;
+@font-face {
+  font-family: noto-color-emoji;
+  src: url(../font/NotoColorEmoji-Regular.ttf);
 }
 
 body {
-  font-family: work-sans, Arial, Helvetica, sans-serif;
+  margin: 0;
   font-size: 20px;
-  margin: 0;
-  background-color: var(--background-color-primary);
+  font-family: geist, noto-color-emoji;
+  overflow-x: hidden;
 }
 
-h1,
-h2 {
-  margin: 0;
-}
-
-/*
-
-Main
-
-*/
-#main {
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-}
-
-section {
+.frame {
   position: relative;
   min-height: 100vh;
-  width: 100%;
-  padding: 3em;
-  box-sizing: border-box;
+  min-width: 100vw;
 }
 
-/*
-
-Landing
-
-*/
-
-#landing {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--amber);
-  color: black;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 2em;
-}
-
-#title {
+#presentation {
   position: absolute;
-  user-select: none;
-  font-size: 15em;
-  font-weight: 400;
-  bottom: 0;
-}
-
-/*
-
-About me
-
-*/
-
-#about-heading {
-  font-size: 8em;
-  font-weight: 350;
-  margin: 0;
-}
-
-#about-description {
-  position: relative;
-  font-size: 1.5em;
-  margin: 1em 0;
   width: 50%;
-  line-height: 1.75;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/*
-
-Projects
-
-*/
-
-#projects-heading {
-  font-size: 8em;
+#presentation > h1 {
+  font-weight: 400;
+  font-size: 3em;
   margin: 0;
-  position: absolute;
-  bottom: 0.5em;
-  font-weight: 500;
-  user-select: none;
 }
 
-#projects-section {
-  background-color: var(--crimson-red);
-  padding: 2em;
-  box-sizing: border-box;
+p {
+  font-size: 1.5em;
 }
 
-#project-count {
-  position: absolute;
-  bottom: 2em;
-  font-size: 2em;
-  font-weight: 500;
-  right: 2em;
-  color: #ddd;
-  user-select: none;
-}
-
-/* Project list */
 #projects {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 50vh;
+}
+
+#projects > h1 {
+  font-weight: 500;
+}
+
+#project-list-wrapper {
+  margin-top: 2em;
+}
+
+hgroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+#result-count {
+  font-weight: 500;
+}
+
+#search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+}
+
+#search-bar > img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#search-bar > input {
+  font-family: geist, noto-color-emoji;
+  font-size: 1.5em;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 10ch;
+  text-overflow: ellipsis;
+}
+
+#search-bar > input::placeholder {
+  user-select: none;
 }
 
 .project {
-  border: 1px solid black;
-  box-sizing: border-box;
+  width: 80%;
 }
 
-.project > hgroup {
-  background-color: black;
-  color: white;
-}
-
-.project > hgroup > h2 {
-  font-weight: 300;
-  font-size: 2em;
-  padding: 0.25em 0.5em;
-  user-select: none;
-}
-
-.tag-list {
-  display: flex;
-  margin-bottom: 0.5em;
-  gap: 1ch;
-}
-
-.tag-list > div > img {
-  height: 1em;
-  width: 1em;
-  border-radius: 50%;
-}
-
-.tag-list > div {
-  display: flex;
-  border: 1px solid black;
-  padding: 0.25em 0.5em;
-  gap: 1ch;
-  font-size: 0.8em;
-  border-radius: 1em;
-  user-select: none;
-  align-items: center;
-  white-space: nowrap;
-}
-
-[data-source-code-url],
-[data-live-demo-url] {
-  cursor: pointer;
-}
-
-.try-it {
-  color: #ddd;
-  background-color: black;
-  transition: 500ms;
-  cursor: pointer;
-}
-
-.try-it:hover {
-  background-color: var(--crimson-red);
-  border-color: var(--crimson-red);
-}
-
-.project-content {
-  box-sizing: border-box;
-  padding: 1em;
-}
-
-.project-content > p {
+.project > h3 {
+  font-weight: 500;
   margin: 0;
-  line-height: 1.5;
 }
 
-.small-caps {
-  text-transform: lowercase;
-  font-variant: small-caps;
+.project > p {
+  font-size: 1em;
 }
 
-@media screen and (width <= 1400px) {
-  body {
-    font-size: 18px;
-  }
+#project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
-@media screen and (width <= 1200px) {
-  body {
-    font-size: 16px;
-  }
+.project-tags {
+  display: flex;
+  gap: 1ch;
 }
 
-@media screen and (width <= 960px) {
-  body {
-    font-size: 14px;
-  }
+.project-tags > div {
+  font-size: 0.8em;
+  border: 1px solid #aaa;
+  width: fit-content;
+  padding: 0.125em 0.25em;
+  display: flex;
+  gap: 0.5ch;
+  border-radius: 0.25em;
+  align-items: center;
+  cursor: pointer;
 }
 
-@media screen and (width <= 800px) {
-  body {
-    font-size: 12px;
-  }
-
-  #about-description {
-    width: 75%;
-  }
-
-  #about-heading {
-    font-size: 6em;
-  }
-
-  #projects-heading {
-    font-size: 7em;
-  }
+.project-tags > div > img {
+  width: 1em;
+  height: 1em;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-@media screen and (width <= 640px) {
-  body {
-    font-size: 12px;
-  }
+footer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
 
-  #title {
-    font-size: 10em;
-  }
+footer > #links {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  #about-heading {
-    font-size: 6em;
-  }
-
-  #projects-heading {
-    font-size: 5em;
-  }
-
-  #about-description {
-    width: 100%;
-  }
+#links > div > img {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
 }

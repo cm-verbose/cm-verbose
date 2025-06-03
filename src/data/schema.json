@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "All the available projects",
+  "type": "object",
+  "properties": {
+    "projects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/projectData"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "projectData": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "links": {
+          "$ref": "#/$defs/projectLinks"
+        },
+        "tags": {
+          "$ref": "#/$defs/projectTags"
+        }
+      },
+      "required": ["description", "name"],
+      "additionalProperties": false
+    },
+    "projectLinks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/projectLink"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "projectLink": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["github", "standalone"]
+        }
+      },
+      "required": ["url", "type"],
+      "additionalProperties": false
+    },
+    "projectTags": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/projectTag"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "projectTag": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": ["java", "lang_fr", "other"]
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  "required": ["projects"]
+}

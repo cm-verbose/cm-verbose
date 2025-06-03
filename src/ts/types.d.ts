@@ -1,23 +1,32 @@
-/**
- * @description Valid types for URL targets
- */
-declare interface URLTargetTypeInterface {
-  LIVE_DEMO: "data-live-demo-url";
-  SOURCE: "data-source-code-url";
+/** Corresponds to the fetched data */
+interface ProjectData {
+  $schema: NonNullable<string>;
+  projects: Array<Required<ProjectInfo>>;
 }
 
-type URLTargetType = NonNullable<URLTargetTypeInterface[Required<keyof URLTargetTypeInterface>]>;
-
-declare interface TargetShape {
-  nodes: NodeListOf<Element>;
-  target: URLTargetType;
+/** Corresponds to the information about each project */
+interface ProjectInfo {
+  name: NonNullable<string>;
+  description: NonNullable<string>;
+  links?: Array<{
+    url: NonNullable<string>;
+    type: ProjectLinkType;
+  }>;
+  tags?: [ProjectTag, ...Array<ProjectTag>];
 }
 
-/**
- * @see {@link https://stackoverflow.com/questions/41139763/how-to-declare-a-fixed-length-array-in-typescript}
- */
-declare type FixedLengthArray<T, Length extends number> = ReadonlyArray<T> & { length: Length };
-declare type TargetsArray = FixedLengthArray<TargetShape, 2>;
+/** Corresponds to the tags used for each project */
+enum ProjectTags {
+  Java = "java",
+  Language_French = "lang-fr"
+}
 
-declare type CorrespondanceMap = Map<TargetShape["nodes"], NonNullable<TargetShape["target"]>>;
-export { CorrespondanceMap, TargetsArray, URLTargetType };
+type ProjectTag = ProjectTags[keyof typeof ProjectTags];
+
+enum ProjectLinkTypes {
+  Github = "github"
+}
+
+type ProjectLinkType = ProjectLinkTypes[keyof typeof ProjectLinkTypes];
+
+export { ProjectData, ProjectInfo, ProjectLinkType, ProjectTag };

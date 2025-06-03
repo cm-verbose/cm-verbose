@@ -1,0 +1,16 @@
+{
+  "$schema": "./schema.json",
+  "projects": [
+    {
+      "name": "Passphrase Generator",
+      "description": "A project made in the context of a school assignment. Is used to generate random passwords and also to decrypt passwords using the MD5 cryptographic hash function.",
+      "links": [
+        {
+          "url": "https://github.com/cm-verbose/Passphrase-Generator",
+          "type": "github"
+        }
+      ],
+      "tags": [{ "name": "java" }, { "name": "lang_fr" }]
+    }
+  ]
+}
