@@ -1,9 +1,7 @@
 # cm verbose
 
-[![Github Pages](https://github.com/cm-verbose/cm-verbose/actions/workflows/pages.yml/badge.svg?branch=pages)](https://cm-verbose.github.io/cm-verbose/)
+[![Codeberg](./assets/badges/codeberg.svg)](https://codeberg.org/cm-verbose)
 
-I am a developer working on multiple projects to challenge my skill and learn new things.
-
----
-
-![Metrics](https://github.com/cm-verbose/cm-verbose/blob/main/github-metrics.svg)
+I am a developer interested in low-level programming and performance in
+[Rust](https://rust-lang.org). I have mostly worked with web technologies,
+notably using JavaScript and [WebAssembly](https://webassembly.org).
